@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>Product</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/55ca65ac4e.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
     <div class="wrapper header-wrap">
-     <div class="logo">
-        <a href="#" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo-img" width="44px" height="38px"></a>
-        <input type="search" class="search-tag-holder-result"><button class="btn-search"><img src="images/search.svg" alt="search" width="28px" height="28px" class="search-img"></button>
-     </div>
-     <nav class="navigation">
-      <button class="menu-btn"><img src="images/menu-btn.svg" alt="menu" width="32px" height="23px" class="menu-img"></button>
-      <a href="#" class="login"><img src="images/login.svg" alt="login" width="29px" height="29px"></a>
-      <a href="#" class="shop_cart"><img src="images/cart.svg" alt="cart" width="33px" height="29px"></a>
-    </nav>
+      <div class="logo">
+        <a href="index.html" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo-img" width="44px"
+                                                    height="38px"></a>
+        <label>
+          <input type="search" class="search-tag-holder-result">
+        </label>
+        <button class="btn-search"><img src="images/search.svg" alt="search" width="28px" height="28px"
+                                        class="search-img"></button>
+      </div>
+      <nav class="navigation">
+        <button class="menu-btn"><img src="images/menu-btn.svg" alt="menu" width="32" height="23" class="menu-img">
+        </button>
+        <a href="#" class="login"><img src="images/login.svg" alt="login" width="29" height="29"></a>
+        <a href="#" class="shop_cart"><img src="images/cart.svg" alt="cart" width="33" height="29"><i
+                class="quantity-in-cart">5</i></a>
+      </nav>
     </div>
   </header>
   <section class="site-navigation">
@@ -26,7 +34,7 @@
       <h3 class="page-heading">new arrivals</h3>
       <div class="site-navigation-links">
         <a href="index.html" class="site-link">HOME</a><span> /</span>
-        <a href="#" class="site-link">MEN</a><span> /</span>
+        <a href="catalog.html" class="site-link">MEN</a><span> /</span>
         <a href="#" class="site-link activ-link">NEW ARRIVALS</a>
       </div>
     </div>
@@ -49,37 +57,56 @@
       </p>
       <p class="item-price">$561</p>
       <div class="choose-menu">
-        <ul class="choose">
-          <li class="dropdown color-list">
-            <a href="#" data-toggle="dropdown">CHOOSE COLOR <i class="icon-arrow"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="color-item">color-1</a></li>
-              <li><a href="#" class="color-item">color-2</a></li>
-              <li><a href="#" class="color-item">color-3</a></li>
-              <li><a href="#" class="color-item">color-4</a></li>
-            </ul>
-          </li>
-          <li class="dropdown size-list">
-            <a href="#" data-toggle="dropdown">CHOOSE SIZE <i class="icon-arrow"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="size-item">size-1</a></li>
-              <li><a href="#" class="size-item">size-2</a></li>
-              <li><a href="#" class="size-item">size-3</a></li>
-              <li><a href="#" class="size-item">size-4</a></li>
-            </ul>
-          </li>
-          <li class="dropdown quantity-list">
-            <a href="#" data-toggle="dropdown">QUANTITY <i class="icon-arrow"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="quantity-item">quantity-1</a></li>
-              <li><a href="#" class="quantity-item">quantity-2</a></li>
-              <li><a href="#" class="quantity-item">quantity-3</a></li>
-              <li><a href="#" class="quantity-item">quantity-4</a></li>
-            </ul>
-          </li>
-        </ul>
+        <details class="sort-menu choose-color">
+          <summary>CHOOSE COLOR &nbsp;<i class="fas fa-chevron-down"></i></summary>
+          <div class="sort-content">
+            <input type="checkbox" id="color-item-1">
+            <label for="color-item-1">&nbsp;color-1</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="color-item-2">
+            <label for="color-item-2">&nbsp;color-2</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="color-item-3">
+            <label for="color-item-3">&nbsp;color-3</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="color-item-4">
+            <label for="color-item-4">&nbsp;color-4</label>
+          </div>
+        </details>
+        <details class="sort-menu size">
+          <summary>CHOOSE SIZE &nbsp;<i class="fas fa-chevron-down"></i></summary>
+          <div class="sort-content">
+            <input type="checkbox" id="size-item-1">
+            <label for="size-item-1">&nbsp;XL</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="size-item-2">
+            <label for="size-item-2">&nbsp;L</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="size-item-3">
+            <label for="size-item-3">&nbsp;M</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="size-item-4">
+            <label for="size-item-4">&nbsp;S</label>
+          </div>
+          <div class="sort-content">
+            <input type="checkbox" id="size-item-5">
+            <label for="size-item-5">&nbsp;XS</label>
+          </div>
+        </details>
+        <details class="sort-menu quantity">
+          <summary>QUANTITY &nbsp;<i class="fas fa-chevron-down"></i></summary>
+          <div class="sort-content">
+            <label for="quantity-item-min">&nbsp;quantity</label>
+            <input type="number" step="1" id="quantity-item-min">
+          </div>
+        </details>
       </div>
-
       <button class="btn-cart"><img src="images/btn_cart.svg" width="27px" height="25px" alt="cart"> Add to Cart</button>
 
     </div>
@@ -117,12 +144,12 @@
     <div class="wrapper feature-wrap">
       <div class="feature-links">
         <a href="#" target="_blank" class="feature-link"><img src="images/truck.svg" alt="truck" width="45px" height="32px"></a>
-        <h class="feature-heading">Free Delivery</h>
+        <h3 class="feature-heading">Free Delivery</h3>
         <p class="link-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
       </div>
       <div class="feature-links">
         <a href="#" target="_blank" class="feature-link"><img src="images/discount-img.svg" alt="discount" width="40px" height="40px"></a>
-        <h class="feature-heading">Sales & discounts</h>
+        <h3 class="feature-heading">Sales & discounts</h3>
         <p class="link-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
       </div>
       <div class="feature-links">
@@ -136,12 +163,16 @@
     <div class="wrapper feedback-wrap">
       <div class="feedback-form">
         <img src="images/person_photo.jpg" alt="photo" class="manager-img">
-        <p class="manager-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+        <p class="manager-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+          a pulvinar purus condimentum“</p>
       </div>
       <div class="feedback-form">
         <h3 class="subscribe-heading">SUBSCRIBE</h3>
         <h4 class="sub-heading">FOR OUR NEWLETTER AND PROMOTION</h4>
-        <input type="email" value="Enter Your Email" class="email-value"><button class="subscribe-btn">Subscribe</button>
+        <label>
+          <input type="email" value="Enter Your Email" class="email-value">
+        </label>
+        <button class="subscribe-btn">Subscribe</button>
       </div>
     </div>
   </section>
@@ -149,10 +180,10 @@
     <div class="wrapper footer-wrap">
       <p class="footer-text">&copy Brand All Rights Reserved.</p>
       <div class="social-links">
-        <a href="#" target="_blank" class="link-item"><img src="images/facebook.svg" width="9px" height="15px" alt="facebook"></a>
-        <a href="#" target="_blank" class="link-item"><img src="images/insta.svg" width="16px" height="15px" alt="instagram"></a>
-        <a href="#" target="_blank" class="link-item"><img src="images/pinterest.svg" width="13px" height="16px" alt="pinterest"></a>
-        <a href="#" target="_blank" class="link-item"><img src="images/twetter.svg" width="17px" height="14px" alt="twetter"></a>
+        <a href="#" target="_blank" class="link-item facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="link-item instagram social-active"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" class="link-item pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" target="_blank" class="link-item twitter"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   </footer>
