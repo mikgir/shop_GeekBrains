@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>shopping cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/55ca65ac4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header-wrap">
+     <div class="logo">
+        <a href="index.html" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo-img" width="44" height="38"></a>
+       <label>
+         <input type="search" class="search-tag-holder-result">
+       </label>
+       <button class="btn-search"><img src="images/search.svg" alt="search" width="28" height="28" class="search-img"></button>
+     </div>
+      <nav class="navigation">
+        <button class="menu-btn"><img src="images/menu-btn.svg" alt="menu" width="32" height="23" class="menu-img"></button>
+        <a href="#" class="login"><img src="images/login.svg" alt="login" width="29" height="29"></a>
+        <a href="#" class="shop_cart"><img src="images/cart.svg" alt="cart" width="33" height="29"><i class="quantity-in-cart">5</i></a>
+      </nav>
+    </div>
+  </header>
+    <section class="site-navigation">
+      <div class="wrapper navigation-wrap">
+        <h3 class="page-heading">SHOPPING CART</h3>
+        <!-- if needed
+        <div class="site-navigation-links">
+          <a href="index.html" class="site-link">HOME</a><span> /</span>
+          <a href="#" class="site-link">MEN</a><span> /</span>
+          <a href="product.html" class="site-link activ-link">NEW ARRIVALS</a>
+        </div>
+        -->
+      </div>
+    </section>
+  <section class="shop-cart">
+    <div class="wrapper shop-cart-wrap">
+      <div class="products-cart">
+        <div class="cart-item">
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+          <img src="images/men_item_3.jpg" alt="photo" class="item-img">
+          <div class="product-items">
+            <p class="product-brend">MANGO PEOPLE</p>
+            <p class="product-name">T-SHIRT</p>
+            <p class="item-price">Price:&nbsp;<span class="price">$300</span></p>
+            <p class="item-color">Color:&nbsp;<span class="color">Red</span></p>
+            <p class="item-size">Size:&nbsp;<span class="size">XL</span></p>
+            <label for="quantity-item-1">Quantity</label>
+              <input type="number" step="1" placeholder="2" min="1" max="10" id="quantity-item-1">
+          </div>
+        </div>
+        <div class="cart-item">
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+          <img src="images/men_item_2.jpg" alt="photo" class="item-img">
+          <div class="product-items">
+            <p class="product-brend">MANGO PEOPLE</p>
+            <p class="product-name">T-SHIRT</p>
+            <p class="item-price">Price:&nbsp;<span class="price">$300</span></p>
+            <p class="item-color">Color:&nbsp;<span class="color">Red</span></p>
+            <p class="item-size">Size:&nbsp;<span class="size">XL</span></p>
+            <label for="quantity-item-2">Quantity</label>
+            <input type="number" step="1" placeholder="2" min="1" max="10" id="quantity-item-2">
+          </div>
+        </div>
+        <form action="#" class="cart-buttons">
+          <button type="reset" class="cart-btn">CLEAR SHOPPING CART</button>
+          <button type="button" class="cart-btn">CONTINUE SHOPPING</button>
+        </form>
+      </div>
+      <div class="billing-cards">
+        <form action="#" class="billing-forms">
+          <fildset class="delivery-forms">
+            <legend class="delivery">SHIPPING ADRESS</legend>
+            <label for="user-address"></label>
+            <input type="text" class="address" id="user-address" placeholder="Bangladesh">
+            <label for="user-state"></label>
+            <input type="text" class="address" id="user-state" placeholder="State">
+            <label for="user-zipcode"></label>
+            <input type="text" class="address" id="user-zipcode" placeholder="Postcode &nbsp;&frasl;&nbsp; Zip">
+            <button class="user-address-btn">GET A QUOTE</button>
+          </fildset>
+          <div class="bill-card">
+            <p class="sub-sum">SUB TOTAL<span>$900</span></p>
+            <p class="total-sum">GRAND TOTAL<span>$900</span></p>
+            <button class="checkout">PROCEED TO CHECKOUT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="feedback">
+    <div class="wrapper feedback-wrap">
+      <div class="feedback-form">
+        <img src="images/person_photo.jpg" alt="photo" class="manager-img">
+        <p class="manager-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+          a pulvinar purus condimentum“</p>
+      </div>
+      <div class="feedback-form">
+        <h3 class="subscribe-heading">SUBSCRIBE</h3>
+        <h4 class="sub-heading">FOR OUR NEWLETTER AND PROMOTION</h4>
+        <label>
+          <input type="email" value="Enter Your Email" class="email-value">
+        </label>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper footer-wrap">
+      <p class="footer-text">&copy Brand All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" target="_blank" class="link-item facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="link-item instagram social-active"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" class="link-item pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" target="_blank" class="link-item twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

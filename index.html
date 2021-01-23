@@ -6,25 +6,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/55ca65ac4e.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
     <div class="wrapper header-wrap">
      <div class="logo">
-        <a href="#" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo-img" width="44px" height="38px"></a>
-        <input type="search" class="search-tag-holder-result"><button class="btn-search"><img src="images/search.svg" alt="search" width="28px" height="28px" class="search-img"></button>
+        <a href="#" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo-img" width="44" height="38"></a>
+       <label>
+         <input type="search" class="search-tag-holder-result">
+       </label>
+       <button class="btn-search"><img src="images/search.svg" width="27" height="28" alt="search"></button>
      </div>
      <nav class="navigation">
-      <button class="menu-btn"><img src="images/menu-btn.svg" alt="menu" width="32px" height="23px" class="menu-img"></button>
-      <a href="#" class="login"><img src="images/login.svg" alt="login" width="29px" height="29px"></a>
-      <a href="#" class="shop_cart"><img src="images/cart.svg" alt="cart" width="33px" height="29px"></a>
-    </nav>
+      <button class="menu-btn"><img src="images/menu-btn.svg" alt="menu" width="32" height="23" class="menu-img"></button>
+      <a href="#" class="login"><img src="images/login.svg" alt="login" width="29" height="29"></a>
+      <a href="#" class="shop_cart"><img src="images/cart.svg" alt="cart" width="33" height="29"><i class="quantity-in-cart">5</i></a>
+     </nav>
     </div>
   </header>
   <section class="promo">
     <div class="wrapper promo-wrap">
       <img src="images/maine-img.jpg" alt="photo" class="main-img">
-      <div class="line"></div>
+
       <div class="main-heading">
         <h1>the brand</h1>
         <h2>of luxerious <span>fashion</span></h2>
@@ -103,49 +107,53 @@
           <p class="item-price">$52.00</p>
         </div>
       </div>
-      <button class="btn-browse">Browse All Product</button>
+      <button type="button" class="btn-browse">Browse All Product</button>
     </div>
   </section>
   <section class="feature">
     <div class="wrapper feature-wrap">
       <div class="feature-links">
-        <a href="#" target="_blank" class="feature-link"><img src="images/truck.svg" alt="truck" width="45px" height="32px"></a>
+        <a href="#" target="_blank" class="feature-link"><img src="images/truck.svg" alt="truck" width="45" height="32"></a>
         <h class="feature-heading">Free Delivery</h>
         <p class="link-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
       </div>
       <div class="feature-links">
-        <a href="#" target="_blank" class="feature-link"><img src="images/discount-img.svg" alt="discount" width="40px" height="40px"></a>
+        <a href="#" target="_blank" class="feature-link"><img src="images/discount-img.svg" alt="discount" width="40" height="40"></a>
         <h class="feature-heading">Sales & discounts</h>
         <p class="link-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
       </div>
       <div class="feature-links">
-        <a href="#" target="_blank" class="feature-link"><img src="images/assurance-img.svg" alt="assurance" width="45px" height="32px"></a>
+        <a href="#" target="_blank" class="feature-link"><img src="images/assurance-img.svg" alt="assurance" width="45" height="32"></a>
         <h class="feature-heading">Quality assurance</h>
         <p class="link-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
       </div>
     </div>
   </section>
   <section class="feedback">
-    <div class="wrapper feedback-wrap">
-      <div class="feedback-form">
-        <img src="images/person_photo.jpg" alt="photo" class="manager-img">
-        <p class="manager-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+      <div class="wrapper feedback-wrap">
+          <div class="feedback-form">
+              <img src="images/person_photo.jpg" alt="photo" class="manager-img">
+              <p class="manager-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  a pulvinar purus condimentum“</p>
+          </div>
+          <div class="feedback-form">
+              <h3 class="subscribe-heading">SUBSCRIBE</h3>
+              <h4 class="sub-heading">FOR OUR NEWLETTER AND PROMOTION</h4>
+              <label>
+                  <input type="email" value="Enter Your Email" class="email-value">
+              </label>
+              <button class="subscribe-btn">Subscribe</button>
+          </div>
       </div>
-      <div class="feedback-form">
-        <h3 class="subscribe-heading">SUBSCRIBE</h3>
-        <h4 class="sub-heading">FOR OUR NEWLETTER AND PROMOTION</h4>
-        <input type="email" value="Enter Your Email" class="email-value"><button class="subscribe-btn">Subscribe</button>
-      </div>
-    </div>
   </section>
   <footer class="footer">
     <div class="wrapper footer-wrap">
       <p class="footer-text">&copy Brand All Rights Reserved.</p>
       <div class="social-links">
-        <a href="#" target="_blank" class="link-item facebook"></a>
-        <a href="#" target="_blank" class="link-item instagram social-activ"></a>
-        <a href="#" target="_blank" class="link-item pinterest"></a>
-        <a href="#" target="_blank" class="link-item twetter"></a>
+        <a href="#" target="_blank" class="link-item facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="link-item instagram social-active"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" class="link-item pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" target="_blank" class="link-item twitter"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   </footer>
