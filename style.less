@@ -19,28 +19,167 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 a {
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.4s;
 }
+
+button {
+  cursor: pointer;
+}
+
 .header {
   min-height: 75px;
   background-color: #222222;
   padding: 18px 0;
+  position: relative;
+  overflow: hidden;
 }
+
+.eye {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: @pink;
+  background-image: -web1-linear-gradient(left, rgba(34, 34, 34, 1) 25%, rgba(34, 34, 34, 0.1) 50%, rgba(34, 34, 34, 1) 75%);
+  background-image: -moz-linear-gradient(left, rgba(34, 34, 34, 1) 25%, rgba(34, 34, 34, 0.1) 50%, rgba(34, 34, 34, 1) 75%);
+  background-image: -o-linear-gradient(left, rgba(34, 34, 34, 1) 25%, rgba(34, 34, 34, 0.1) 50%, rgba(34, 34, 34, 1) 75%);
+  background-image: linear-gradient(to right, rgba(34, 34, 34, 1) 25%, rgba(34, 34, 34, 0.1) 50%, rgba(34, 34, 34, 1) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 8s linear 0.3s infinite alternate move_eye;
+  -moz-animation: 8s linear 0.3s infinite alternate move_eye;
+  -o-animation: 8s linear 0.3s infinite alternate move_eye;
+  animation: 8s linear 0.3s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@-moz-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@-o-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+// menu
+
+.menu-overlay {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  height: 764px;
+  top: 75px;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+
+  & .menu {
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 34px 34px;
+
+    & .head-menu {
+      color: #111111;
+    }
+
+    & .menu-man {
+      margin-top: 24px;
+      //color: #111111;
+    }
+
+    & span {
+      color: @pink;
+    }
+
+    & .menu-link {
+      display: inline-block;
+      color: rgba(111, 110, 110, 1);
+      text-transform: capitalize;
+      padding: 5px 0;
+
+      &:hover {
+        color: @pink;
+      }
+    }
+  }
+
+  .menu__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+
+    &:active {
+      color: @pink;
+      box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
+    }
+  }
+}
+
+.menu-overlay-open {
+  display: flex;
+}
+
 .header-wrap {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 4;
 
   .search-tag-holder-result {
     display: none;
+  }
+
+  .logo {
+    position: relative;
   }
 
   .btn-search {
@@ -114,13 +253,14 @@ a {
     .quantity-in-cart {
       display: inline-block;
       position: absolute;
-      top: -6px;
-      right: -7px;
-      width: 19px;
-      height: 19px;
+      top: -7px;
+      right: -10px;
+      width: 17px;
+      height: 17px;
+      padding: 2px;
       border-radius: 50%;
       background-color: #F16D7F;
-      color: #ffffff;
+      color: #FFFFFF;
       font-size: 12px;
       font-style: normal;
       text-align: center;
@@ -165,6 +305,10 @@ a {
 
 ::-webkit-details-marker {
   display: none;
+}
+
+details[open] .fa-chevron-down {
+  transform: rotateX(180deg);
 }
 
 summary {
@@ -309,11 +453,10 @@ ul {
     height: 93px;
     padding-left: 16px;
     border-left: 12px solid @pink;
-
+  }
     span {
       color: @pink;
     }
-  }
 }
 
 // page product
@@ -355,18 +498,30 @@ ul {
     margin-bottom: 30px;
     vertical-align: center;
 
+    &:hover img {
+      transition: 1.5s;
+      transform: rotateY(360deg);
+    }
+
+    .block-img {
+      display: inline-block;
+    }
+
     .offer-items {
       display: inline-block;
       position: absolute;
       top: 0;
       left: 0;
+      right: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
       text-align: center;
       padding: 105px 0;
       background: rgba(33, 22, 22, 0.7);
-      color: #ffffff;
+      color: #FFFFFF;
     }
+
     span {
       font-size: 24px;
       font-weight: 700;
@@ -375,7 +530,7 @@ ul {
 
     .item-4 {
       width: 100%;
-      height: 180px;
+      height: 100%;
       padding: 65px 0;
     }
   }
@@ -507,8 +662,8 @@ ul {
       background: @pink;
       outline: 1px solid @pink;
       box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
-    }
 
+    }
     &:focus {
       outline: none;
     }
@@ -583,17 +738,28 @@ ul {
         width: 138px;
         height: 44px;
         background: none;
-        outline: 1px solid #ffffff;
-        color: #ffffff;
-        fill: #ffffff;
+        outline: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        fill: #FFFFFF;
 
+        &:active {
+          color: @pink;
+          fill: @pink;
+          outline: 1px solid @pink;
+        }
       }
     }
-
 
     .item-img {
       width: 100%;
       height: 420px;
+    }
+
+    .btn-cart:focus {
+      transition: 1s;
+      transform: rotate(360deg);
+      width: 0;
+      height: 0;
     }
 
     .item-text {
@@ -601,6 +767,7 @@ ul {
       font-size: 14px;
       margin-top: 13px;
     }
+
     .item-price {
       font-weight: 400;
       color: @pink;
@@ -613,17 +780,33 @@ ul {
     height: 47px;
     border: 1px solid @pink;
     color: @pink;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
+
+    & a {
+      color: @pink;
+    }
+
+    &:hover {
+      transform: rotateY(360deg);
+      transition: 0.6s;
+
+      background: @pink;
+
+      & a {
+        color: #FFFFFF;
+      }
+    }
 
     &:active {
-      color: #ffffff;
+      color: #FFFFFF;
       background: @pink;
       outline: 1px solid @pink;
-      box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
+      box-shadow: inset 2px 1px 2px 2px rgba(0, 0, 0, 0.51);
     }
 
     &:focus {
       outline: none;
+
     }
   }
 
@@ -757,7 +940,11 @@ ul {
       width: 234px;
       height: 49px;
       border: 1px solid #A4A4A4;
-      background-color: #ffffff;
+      background-color: #FFFFFF;
+
+      & a {
+        color: #111111;
+      }
 
       &:active {
         outline: none;
