@@ -111,6 +111,7 @@ button {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 10;
 
 
@@ -500,10 +501,11 @@ ul {
 
     &:hover img {
       transition: 1.5s;
-      transform: rotateY(360deg);
+      transform: scale(0.3);
     }
 
     .block-img {
+      transition: 1.5s;
       display: inline-block;
     }
 
@@ -827,6 +829,7 @@ ul {
 
       &:active {
         outline: none;
+        color: @pink;
         box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
       }
 

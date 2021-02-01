@@ -85,16 +85,17 @@ button {
   }
 }
 .menu-overlay {
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  height: 764px;
-  top: 75px;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 764px;
+    top: 75px;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 10;
 }
 .menu-overlay .menu {
   height: 100%;
@@ -411,11 +412,12 @@ ul {
   vertical-align: center;
 }
 .offer-wrap .offer-block:hover img {
-  transition: 1.5s;
-  transform: rotateY(360deg);
+    transition: 1.5s;
+    transform: scale(0.3);
 }
 .offer-wrap .offer-block .block-img {
-  display: inline-block;
+    transition: 1.5s;
+    display: inline-block;
 }
 .offer-wrap .offer-block .offer-items {
   display: inline-block;
@@ -700,8 +702,9 @@ ul {
   margin: 0 3px;
 }
 .products-wrap .pagination .pagination-btn:active {
-  outline: none;
-  box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
+    outline: none;
+    color: #F16D7F;
+    box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.51);
 }
 .products-wrap .pagination .pagination-btn:focus {
   outline: none;
